@@ -1,0 +1,220 @@
+/* Estilo general del body */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: TAN headline, sans-serif;
+    background-color: #fff;
+    color: #149631;
+}
+
+/* Estilos para el header */
+header {
+    background-color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+nav {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos para el logo */
+.logo_principal img {
+    max-height: 80px; /* Ajusta el tamaño del logo según tus necesidades */
+}
+
+/* Estilos para el menú */
+.menu {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+}
+
+.menu li {
+    margin-left: 20px; /* Espaciado entre elementos del menú */
+}
+
+.menu a {
+    text-decoration: none;
+    color: #149631;
+    font-weight: bold;
+}
+
+/* Estilos para el icono de menú en dispositivos móviles */
+.icono-menu {
+    display: none;
+    cursor: pointer;
+    font-size: 35px;
+}
+
+
+/* Estilos del carrusel */
+.carousel {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    overflow: hidden;
+    justify-content: center;
+
+  }
+  
+  .slide {
+    display: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .active {
+    display: block;
+  }
+
+  h1 {
+    text-align: center;
+    margin: 10%;
+  }
+
+  .slogan-index {
+    text-align: center;
+    font-size: 34px;
+    margin-bottom: 100px;
+  }
+
+
+  /* Estilos para las tarjetas */
+  .contenedor-flex {
+    display: flex;
+    justify-content: space-around;
+  }
+  .card-body {
+    margin-left: 60px;
+    align-items: center;
+    width: 18em;
+  }
+
+  .btn{
+    background-color: #149631;
+    align-items: center;
+  }
+
+.img-body{
+    display: flex;
+    justify-content: center;
+    margin-top: 75px;
+}
+
+.titulo-secundario {
+    display: flex;
+    justify-content: center;
+    margin-top: 5em;
+
+}
+
+.slogan-secundario {
+    display: flex;
+    text-align: center;
+    font-size: 34px;
+    margin: 30px 150px;
+
+}
+
+
+footer {
+    background-color: #149631;
+    color: #fff;
+    font-size: 24px;
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente fila */
+    justify-content: space-around; /* Alinea los elementos alrededor horizontalmente */
+    align-items: flex-start; /* Alinea los elementos en la parte superior verticalmente */
+}
+
+/* Estilo para los divs */
+footer div {
+    width: calc(20% - 10px); /* Establece el ancho de cada div (ajusta según tus necesidades) */
+    margin-bottom: 20px; /* Espaciado entre los divs */
+    padding: 10px; /* Espaciado interno dentro de los divs */
+}
+
+
+
+/* 
+footer {
+    background-color: #149631;
+    color: #fff;
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+} */
+
+footer div {
+    margin: 100px 100px;
+}
+
+footer ul {
+    list-style: none; /* Elimina el marcador de la lista */
+}
+
+.menuf a {
+    text-decoration: none;
+    pointer-events: none;
+    
+}
+.menuf li {
+    list-style: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+  
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .logo_principal img {
+        max-height: 75px; /* Ajusta el tamaño del logo según tus necesidades */
+    }
+    .menu {
+        display: none;
+        flex-direction: column;
+        align-items: flex-end;
+        font-size: 0.6em;
+    }
+
+    .icono-menu {
+        display: block;
+    }
+
+    /* Agrega un estilo para mostrar el menú al hacer clic en el icono */
+    .mostrar-menu {
+        display: block !important;
+        
+    }
+    h1 {
+        text-align: center;
+        margin: 5%;
+      }
+    
+      .slogan-index {
+        text-align: center;
+      }
+      .contenedor-flex {
+        flex-direction: column;
+        align-items: center;
+      }
+}
+
